@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background: bisque;
+    padding: 1.4rem 0;
+}
+
+button {
+    border-radius: 50%;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.icon {
+    max-height: 20px;
+    max-width: 20px;
+    vertical-align: middle;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    font-size: 20px;
+    margin: 20px 10px 0;
+}
+
+#diceContainer i {
+    vertical-align: middle;
+}
+
+.diceType {
+    margin-bottom: 1.2rem;
+}
+
+.diceType button {
+    height: 60px;
+    width: 60px;
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+.diceType input[type=number] {
+    vertical-align: middle;
+    margin: 0 20px;
+    width: 80px;
+    height: 60px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 10px;
+}
+
+#diceResults {
+    margin-top: 1.5rem;
+}
+
+.diceContainer {
+    margin-bottom: 1.2rem;
+}

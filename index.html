@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Massive Darkness Dice Simulator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="diceSelection">
+            <div class="diceType">
+                <h2 style="color: blue;">Blue Dice</h2>
+                <button onclick="decreaseDice('blue')">-</button>
+                <input type="number" id="blueDiceCount" value="0" min="0">
+                <button onclick="increaseDice('blue')">+</button>
+            </div>
+
+            <div class="diceType">
+                <h2 style="color: green;">Green Dice</h2>
+                <button onclick="decreaseDice('green')">-</button>
+                <input type="number" id="greenDiceCount" value="0" min="0">
+                <button onclick="increaseDice('green')">+</button>
+            </div>
+
+            <div class="diceType">
+                <h2 style="color: rgb(190, 173, 13);">Yellow Dice</h2>
+                <button onclick="decreaseDice('yellow')">-</button>
+                <input type="number" id="yellowDiceCount" value="0" min="0">
+                <button onclick="increaseDice('yellow')">+</button>
+            </div>
+
+            <div class="diceType">
+                <h2 style="color: red;">Red Dice</h2>
+                <button onclick="decreaseDice('red')">-</button>
+                <input type="number" id="redDiceCount" value="0" min="0">
+                <button onclick="increaseDice('red')">+</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="roll-btn" onclick="rollDice()">Lancia</button>
+            <button class="reset-btn" onclick="resetDice()">Reset</button>
+        </div>
+
+        <div id="diceResults">
+            <div id="blueDiceContainer" class="diceContainer">
+                <h2 style="color: blue;">Blue Dice Results:</h2>
+            </div>
+            <div id="greenDiceContainer" class="diceContainer">
+                <h2 style="color: green;">Green Dice Results:</h2>
+            </div>
+            <div id="yellowDiceContainer" class="diceContainer">
+                <h2 style="color: rgb(190, 173, 13);">Yellow Dice Results:</h2>
+            </div>
+            <div id="redDiceContainer" class="diceContainer">
+                <h2 style="color: red;">Red Dice Results:</h2>
+            </div>
+        </div>
+    </div>
+</body>
+
+
+</html>
