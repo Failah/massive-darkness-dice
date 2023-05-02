@@ -13,8 +13,14 @@
     <script src="js/script.js" defer></script>
 </head>
 
-<body>
-    <div class="container">
+<body id="body" class="bg-bisque">
+    <nav>
+        <button id="massiveDarknessDice">Massive Darkness</button>
+        <button id="normalDice">Normal Dice</button>
+        <button id="utilities">Utilities</button>
+    </nav>
+
+    <div id="massiveDarknessContainer" class="container">
         <div class="diceSelection">
             <div class="diceType">
                 <h2 style="color: blue;">Blue Dice</h2>
@@ -63,6 +69,86 @@
             <div id="redDiceContainer" class="diceContainer">
                 <h2 style="color: red;">Red Dice Results:</h2>
             </div>
+        </div>
+    </div>
+
+    <div id="normalDiceContainer" class="container hidden">
+        <div class="normalDiceSelection">
+            <div class="normalDiceType">
+                <h2 style="color: blue;" class="normalDiceValue">D2:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+            <div class="normalDiceType">
+                <h2 style="color: green;" class="normalDiceValue">D4:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+            <div class="normalDiceType">
+                <h2 style="color: rgb(190, 173, 13);" class="normalDiceValue">D6:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+            <div class="normalDiceType">
+                <h2 style="color: red;" class="normalDiceValue">D10:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+            <div class="normalDiceType">
+                <h2 style="color: rgb(194, 9, 185);" class="normalDiceValue">D20:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+            <div class="normalDiceType">
+                <h2 style="color: rgb(53, 222, 228);" class="normalDiceValue">D100:</h2>
+                <button class="subtractNormal">-</button>
+                <span class="launchNumberNormal">0</span>
+                <button class="addNormal">+</button>
+            </div>
+        </div>
+
+        <div class="buttons">
+            <button class="roll-btn" onclick="rollNormalDice()">Lancia</button>
+            <button class="reset-btn" onclick="resetNormalDice()">Reset</button>
+        </div>
+
+        <div id="normalDiceResults">
+            <div id="d2DiceContainer" class="diceContainer">
+                <h2 style="color: blue;">D2:</h2>
+                <div class="results"></div>
+            </div>
+            <div id="d4DiceContainer" class="diceContainer">
+                <h2 style="color: green;">D4:</h2>
+                <div class="results"></div>
+            </div>
+            <div id="d6DiceContainer" class="diceContainer">
+                <h2 style="color: rgb(190, 173, 13);">D6:</h2>
+                <div class="results"></div>
+            </div>
+            <div id="d10DiceContainer" class="diceContainer">
+                <h2 style="color: red;">D10:</h2>
+                <div class="results"></div>
+            </div>
+            <div id="d20DiceContainer" class="diceContainer">
+                <h2 style="color: rgb(194, 9, 185);">D20:</h2>
+                <div class="results"></div>
+            </div>
+            <div id="d100DiceContainer" class="diceContainer">
+                <h2 style="color: rgb(53, 222, 228);">D100:</h2>
+                <div class="results"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="utilitiesContainer" class="container hidden">
+        <div class="note-container">
+            <h3>Notes</h3>
+            <textarea placeholder="Type here..." name="" id="" cols="30" rows="10"></textarea>
         </div>
     </div>
 </body>
