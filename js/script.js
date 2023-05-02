@@ -110,7 +110,7 @@ function showSection(key) {
 }
 
 // Mostra la sezione "massiveDarkness" all'avvio dell'app
-showSection('normalDice');
+showSection('massiveDarkness');
 
 
 // NORMAL DICE SECTION ***************************************************************************
